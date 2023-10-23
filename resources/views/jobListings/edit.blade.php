@@ -10,6 +10,9 @@
             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" id="company">Company</label>
             <input value="{{$job->company}}"  name="company" type="text" value="" required min="5" max="255" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></input>
 
+            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" id="company_website">Company Website</label>
+            <input value="{{$job->company_website}}"  name="company_website" type="url" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></input>
+
             <label id="location" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Location</label>
             <input value="{{$job->location}}"  name="location" type="text" value="" required min="5" max="255" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></input>
 
