@@ -15,8 +15,9 @@
 
             @foreach ($jobListings as $job)
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <div class="p-5">
-                    <x-card-content :job="$job"/>
+                <x-card-time :updated_at="$job->updated_at" />
+                <div class="p-5 relative">
+                    <x-card-content :job="$job" />
                     <div class="flex justify-between">
 
                         <a href="/jobs/{{$job->id}}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
