@@ -1,5 +1,4 @@
 <x-app-layout>
-
     <header class="bg-gray-800 lg:p-20 p-5 border-solid border-gray-900 border-2 ">
         <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             Your Path to Professional Excellence</h1>
@@ -12,14 +11,12 @@
     </header>
     <div class="flex flex-col justify-start">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-auto lg:p-20 p-5 bg-gray-800 ">
-
             @foreach ($jobListings as $job)
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <x-card-time :updated_at="$job->updated_at" />
                 <div class="p-5 relative">
                     <x-card-content :job="$job" />
                     <div class="flex justify-between">
-
                         <a href="/jobs/{{$job->id}}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Read more
                             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
