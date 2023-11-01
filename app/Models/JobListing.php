@@ -17,6 +17,7 @@ class JobListing extends Model
         "location",
         "company",
         "company_website",
+        "apply_url",
     ];
     public function user(): BelongsTo
     {

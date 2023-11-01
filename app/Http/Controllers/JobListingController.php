@@ -48,6 +48,7 @@ class JobListingController extends Controller
                 'location' => "required|max:100|min:2|string",
                 'company' => "required|max:100|min:2|string",
                 'company_website' => "url|nullable",
+                'apply_url' => "url|nullable",
                 'description' => "required|min:20",
             ]
         );
@@ -89,9 +90,9 @@ class JobListingController extends Controller
                 'title' => "required|max:100|min:5|string", 'company' => "required|max:100|min:5|string",
                 'location' => "required|max:100|min:2|string",
                 'company' => "required|max:100|min:2|string",
-                'company_website'=>'url|nullable',
+                'company_website' => 'url|nullable',
                 'description' => "required|min:20",
-                'company_website' => "url",
+                'apply_url' => "url|nullable",
             ]
         );
 
