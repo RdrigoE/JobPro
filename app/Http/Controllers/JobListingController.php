@@ -21,7 +21,7 @@ class JobListingController extends Controller
             return view("jobListings.index", ["jobListings" => JobListing::paginate(8), 'savedJobs' => []]);
         }
         $jobListings = JobListing::with('user')->latest()->paginate(8);
-        $savedJobs = $user->SavedJobs()->get();
+        $savedJobs = $user->savedJobs()->get();
         $job_ids = [];
         foreach ($savedJobs as $job) {
             array_push($job_ids, $job->job_listing_id);
